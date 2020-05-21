@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="LockerBuster.exe" version="1.0.0.0" publicKeyToken="49cc1fb0ee9e9730" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="LockerBuster" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="LockerBuster.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="LockerBuster.exe" size="17824">
+      <assemblyIdentity name="LockerBuster" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Cao1k1pfGiBhGuemHUB8ukwgeTbO2MFeJ34ugAdWslU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="LockerBuster.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=SPACE\Moon" issuerKeyHash="da2fa3275ae6bac2746e58063c6e8b091da96c6d" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GQcooJz8Zi89QcsU3jEzmn12KAJPwYF+9KljGlYhr2M=</DigestValue></Reference></SignedInfo><SignatureValue>Kamhh7Zio8xNbqd6x1TIr1faAeLp3U9M/AltcrkJiROatP8mBmf+LC2tjBBz3kljABrYk7ZCsPvRPb2XT0MRr+bLFD2o4THUGRC6vudU363UafiDrGClpm3jTxlZudQ4cEgJe+OLx/043qwxiz8XrQbg7RyJcnuZRRxK+LOzH/I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tTaaI4OAGZxshE3rPWC82/6UBmWLfDQ1qDYGvkltfPe55klCSmC1ida3E6IpPB9WdAnMkFk0yFpgnDKBPx/2znl7zCl0ymfjUnfylG/BuSFQyruGiQmeJTOQ76Pao7ZU9p574jh276B0WpNjcsGmFAdiZCwqMOCqxznghAyU1qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="63af21561a63a9f47e81c14f0228767d9a3331de14cb413d2f66fc9ca0280719" Description="" Url=""><as:assemblyIdentity name="LockerBuster.exe" version="1.0.0.0" publicKeyToken="49cc1fb0ee9e9730" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=SPACE\Moon</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>S9VC3dOHxYTUt5Yw5xgRniGZkYg1gvmFQ9Q/AkD7pms=</DigestValue></Reference></SignedInfo><SignatureValue>hfmnPUirNL6z7YZAEX7fTHrMPWG3SE1kM0HTo2AvcrDGbQHn23LRXzKrfRMlEV+F66/RXFvur59jRjXjNwOfBlKXwVx8JBg3rlM3kP9V91v2cWWeMMOeLeaCrfz8Ss8shy7sC5+Kva4LoB0dY9OYWUe6s5gU/LCjlBxJ4Nb3C20=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tTaaI4OAGZxshE3rPWC82/6UBmWLfDQ1qDYGvkltfPe55klCSmC1ida3E6IpPB9WdAnMkFk0yFpgnDKBPx/2znl7zCl0ymfjUnfylG/BuSFQyruGiQmeJTOQ76Pao7ZU9p574jh276B0WpNjcsGmFAdiZCwqMOCqxznghAyU1qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQKV/mu6VXTqZD6BbmYEBdHzANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQAUwBQAEEAQwBFAFwATQBvAG8AbjAeFw0yMDAyMTkwNTQwMzJaFw0yMTAyMTgxMTQwMzJaMB8xHTAbBgNVBAMeFABTAFAAQQBDAEUAXABNAG8AbwBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1Npojg4AZnGyETes9YLzb/pQGZYt8NDWoNga+SW1897nmSUJKYLWJ1rcToik8H1Z0CcyQWTTIWmCcMoE/H/bOeXvMKXTKZ+NSd/KUb8G5IVDKu4aJCZ4lM5Dvo9qjtlT2nnviOHbvoHRak2NywaYUB2JkLCow4KrHOeCEDJTWqQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEFNM+AEZnu8DQJ2F3eZHTiP1x3tG2MyceTGEwSqAbkwzMCaaYEo+cIR7MxzfOvcLNayRL0Rjc7KsiqX62MAllkrDaZ4H+hFo5/hpFDx2/fvB3IfQzavLdzDtnobUxypTIKd+dZnRex1UBC/GvW2c3Xk0M7gGg712t+UlWK0+OI/</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
