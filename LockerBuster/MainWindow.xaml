@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LockerBuster"
         mc:Ignorable="d"
-        Title="MainWindow" Height="404.158" Width="320.999">
+        Title="MainWindow" Height="425.158" Width="320.999">
     <Grid>
-        <Button x:Name="TargetFolderButton" Content="Select Target Folder" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="144" Click="TargetFolderButton_Click"/>
         <Button x:Name="DestinationFolderButton" Content="Select Destination Folder" HorizontalAlignment="Left" Margin="159,10,0,0" VerticalAlignment="Top" Width="144" Height="45" Click="DestinationFolderButton_Click"/>
         <ListView x:Name="FileList" HorizontalAlignment="Left" Height="248" Margin="10,60,0,0" VerticalAlignment="Top" Width="293">
             <ListView.View>
@@ -16,9 +15,10 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button x:Name="TargetFolderButton" Content="Select Target Folder" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="144" Click="TargetFolderButton_Click"/>
         <Button x:Name="TargetFilesButton" Content="Select Target Files" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="144" Click="TargetFilesButton_Click"/>
         <Label x:Name="DestinationLabel" Content="&lt;Destination&gt;" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top" IsEnabled="False"/>
         <Button x:Name="DecryptButton" Content="Decrypt" HorizontalAlignment="Left" Margin="112,343,0,0" VerticalAlignment="Top" Width="75" Click="DecryptButton_Click"/>
-
+        <ProgressBar x:Name="DecryptionProgressBar" HorizontalAlignment="Left" Height="16" Margin="10,368,0,0" VerticalAlignment="Top" Width="293"/>
     </Grid>
 </Window>
